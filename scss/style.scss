@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+@media (max-width:1040px){
+    .container{
+        max-width: 940px;
+    }
+}
+@media (max-width:940px){
+    .container{
+        max-width: 840px;
+    }
+}
+@media (max-width:840px){
+    .container{
+        max-width: 740px;
+    }
+}
+@media (max-width:740px){
+    .container{
+        max-width: 640px;
+    }
+}
+@media (max-width:640px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (max-width:540px){
+    .container{
+        max-width: 440px;
+    }
+}
+@media (max-width:440px){
+    .container{
+        max-width: 340px;
+    }
+}
+/* ***************** NAV ***************** */
+nav{
+    text-align: center;
+    i{
+        font-size: 40px;
+    }
+}
+/* ***************** HEADER ***************** */
+.heroSect{
+    background-color: #fef9e6;
+    padding: 50px 0;
+}
+.flexHero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card{
+        width: 30%;
+    }
+    .heroHeader{
+        align-self: flex-start;
+        h1{
+            font-size: 40px;
+            font-weight: 100;
+            padding-bottom: 20px;
+        }
+        p{
+            padding-bottom: 20px;
+        }
+        i{
+            font-size: 25px;
+            padding-right: 10px;
+        }
+    }
+    .heroImg{
+        padding: 20px 0;
+        object-fit: cover;
+        object-position: center;
+    }
+    .heroInfo{
+        align-self: flex-end;
+        h5{
+            padding-bottom: 20px;
+            font-size: 25px
+        }
+        p{
+            padding-bottom: 20px;
+        }
+        a{
+            color: black;
+            border: 2px solid black;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: .3s;
+        }
+        a:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}
+@media (max-width:840px){
+    .flexHero .heroHeader h1{
+        font-size: 30px;
+    }
+    .flexHero .heroInfo{
+        h5{
+            font-size: 20px;
+        }
+        a{
+            padding: 10px 25px;
+            font-weight: 500;
+        }
+    }
+}
+@media (max-width: 650px){
+    .flexHero{
+        justify-content: center;
+    }
+    .flexHero .card{
+        width: 100%;
+    }
+    .flexHero .heroImg{
+        width: 50%;
+        justify-self: center;
+    }
+}
+/* ***************** SECTION 1 ***************** */
+.flexInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+    .infoCard{
+        width: 45%;
+        h2{
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .infoImg{
+        width: 45%;
+    }
+    .infoCardChild{
+        width: 50%;
+        margin-left: 50%;
+        margin-top: 10%;
+    }
+}
+@media (max-width:840px){
+    .flexInfo .infoCard{
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 16px;
+    }
+    }
+}
+@media (max-width: 650px){
+    .flexInfo .infoCard , .infoImg{
+        width: 100%;
+    }
+    .flexInfo{
+        justify-content: center;
+    }
+}
+/* ***************** SECTION 2 ***************** */
+.gallerySect{
+    background-color: #f2f2f2;
+    padding: 30px 0;
+    h2{
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+.gridGallery{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    gap: 10px;
+    .cardGall{
+        background-color: white;
+        p{
+            padding: 20px 10px;
+            font-size: 20px;
+        }
+        span{
+            display: inline-block;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            font-weight: 700;
+        }
+    }
+    .cardGall div{
+        object-fit: cover;
+        overflow: hidden;
+        object-position: center;
+        padding: 10px;
+        height: 350px;
+    }
+}
+@media (max-width:840px){
+    .gridGallery{
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(4 , 1fr);
+    }
+}
+@media (max-width: 550px){
+    .gridGallery{
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: repeat(8 , 1fr);
+        align-items: center;
+    }
+}
+/* ***************** SECTION 3 ***************** */
+.sectWork{
+    background-color: #fef9e6;
+    padding: 80px 0;
+}
+.flexWork{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    .workCard{
+        width: 40%;
+    }
+}
+.workImg{
+    img{
+        height: 520px;
+        width: 442px;
+    }
+}
+.workTable{
+    margin-top: 30px;
+    h2{
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .workTableChild{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        div{
+            background-color: white;
+            height: 200px;
+            padding: 10px;
+            h4{
+                font-size: 30px;
+                padding-bottom: 20px;
+            }
+            h5{
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 1040px){
+    .flexWork{
+        .workCard{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 550px){
+    .workImg{
+        img{
+            width: 300px;
+            height: 353px;
+        }
+    }
+}
+/* ***************** SECTION 4 ***************** */
+.headFacts{
+    text-align: center;
+    padding: 50px 0;
+    h2{
+        font-size: 40px;
+        font-weight: 100;
+        padding-bottom: 20px;
+    }
+}
+.cardFacts{
+    padding: 30px 20px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
+}
+.cardFacts:hover{
+    background-color: #fef9e6;
+}
+/* ***************** SECTION 4 ***************** */
+.SectBest{
+    text-align: center;
+    margin-top: 80px;
+    h2{
+        font-size: 40px;
+        font-weight: 100;
+        padding-bottom: 30px;
+    }
+}
+.flexSectBest{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 50px;
+    p{
+        font-size: 20px;
+        padding: 25px 0;
+    }
+    span{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .SectBestCard{
+        width: calc(25% - 26.666px);
+        div{
+            height: 300px;
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+}
+@media (max-width: 940px){
+    .flexSectBest .SectBestCard{
+        width: calc(50% - 20px);
+    }    
+}
+@media (max-width: 540px){
+    .flexSectBest .SectBestCard{
+        width: 100%;
+    }    
+}
+/* ***************** SECTION 5 ***************** */
+.rumorBack{
+    background-color: #fef9e6;
+    padding: 50px 0;
+}
+.headRumor{
+    text-align: center;
+    h2{
+        font-size: 40px;
+        font-weight: 100;
+        padding-bottom: 30px;
+    }
+}
+.flexRumor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .rumorCard{
+        width: 32%;
+        background-color: white;
+        padding: 20px;
+        div{
+            overflow: hidden;
+            object-fit: cover;
+            // background-position: 50% 100%;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        h4{
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        p{
+            color: #999999;
+            padding-bottom: 20px;
+        }
+        span{
+            color: #999999;
+        }
+    }
+}
+
+@media (max-width: 940px){
+    .flexRumor .rumorCard{
+        gap: 20px;
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 540px){
+    .flexRumor .rumorCard{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* ***************** FOOTER ***************** */
+footer{
+    text-align: center;
+    background-color: #333333;
+    p{
+        color: white;
+        font-size: 14px;
+    }
+    p:not(.foot){
+        padding-bottom: 20px;
+        a{
+            text-decoration: underline;
+            color: #e7e6fe;
+            font-size: 12px;
+        }
+    }
+    .foot{
+        padding: 40px 0;
+    }
+        a{
+            text-decoration: underline;
+            color: #e7e6fe;
+        }
+    
+}
